@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 id="title">Life in Covid</h1>
+
+<p id="description">Are you also BoREd?<br>Let's see what everybody's upto.</p>
+
+<main>
+<form id="survey-form">
+  
+  <div class="form">
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your Name" required />
+  </div>
+  
+  <div class="form">
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your Email" required />
+  </div>
+
+  <div class="form">
+    <label id="number-label" for="number">Age</label>
+    <input type="number" id="number" min="10" max="99" placeholder="Enter your Age" />
+  </div>
+
+  <div class="form">
+    <p>What did you started learning or did the most in this lockdown ?</p>
+    <select id="dropdown" required>
+      <option disabled selected value>None</option>
+      <option value="Cooking">Cooking</option>
+      <option value="Guitar">Guitar</option>
+      <option value="Gyming/Yoga">Gyming/Yoga</option>
+      <option value="Dancing">Dancing</option>
+      <option value="Sleeping">Sleeping</option>
+      <option value="Dreaming">Dreaming</option>
+      <option value="Reading">Reading</option>
+      <option value="channel">Started channel/page</option>
+      <option value="movies">Watched all movies/series</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  
+  <div class="form">
+    <p>Are you still doing it?</p>
+    <label>
+      <input name="user-recommend" value="yes" type="radio" checked />Yes</label>
+
+    <label>
+      <input name="user-recommend" value="no" type="radio" />No</label>
+
+    <label><input name="user-recommend" value="not-sure" type="radio" />
+      Not sure</label>
+  </div>
+  
+  <div class="form">
+    <p>
+      What would you like to do after Lockdown is over?
+      <span>(Check all that apply)</span>
+    </p>
+    <label>
+      <input name="prefer" value="hangout" type="checkbox" />Hangout with friends</label>
+
+    <label>
+      <input name="prefer" value="Drunk" type="checkbox" />Get Drunk AF</label>
+
+    <label><input name="prefer" value="Trip" type="checkbox" />Go on a Trip</label>
+
+    <label><input name="prefer" value="sleep" type="checkbox" />Still wanna sleep some more</label>
+
+    <label><input name="prefer" value="Idea" type="checkbox" />Take the risk and implement that Idea</label>
+
+    <label><input name="prefer" value="confused" type="checkbox" />Still confused</label>
+
+    <label><input name="prefer" value="cope up" type="checkbox" />Cope up with the lost time and do everything</label>
+    <label>
+
+      <input name="prefer" value="else" type="checkbox" />Netflix and chill</label>
+  </div>
+
+  <div class="form">
+    <p>How was this survey? say anything, even if it's unrelated to this survey.</p>
+    <textarea id="comments" name="comment" rows="4" cols="40" placeholder="Add your comment here..."></textarea>
+  </div>
+
+  <div class="form">
+    <button class="b" type="submit" id="submit">Submit</button>
+  </div>
+  
+</form>
+</main>
+<!-- partial -->
+  
+</body>
+</html>
